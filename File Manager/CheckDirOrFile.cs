@@ -31,15 +31,25 @@ namespace TechnicalTask
 
         public string TwoFilesIsExistOrNot(string a)    //для 2^х файлов /filea..... /fileb..... 
         {
-            string[] file = a.Split(' ');
-
-            if (File.Exists(file[0]) == File.Exists(file[1]))
+            if (a[2] == 'f')
             {
-                return file[0] + " " + file[1];
+                UI.IllusionOfWait();
+
+                Beta = a.Remove(0, 4);
+                string[] file = Beta.Split(' ');
+
+                if (File.Exists(file[0]) == File.Exists(file[1]))
+                {
+                    return file[0] + " " + file[1];
+                }
+
+                UI.ErrorNotFound();
+                return "";
             }
+
             else
             {
-                UI.ErrorNotFound();
+                UI.ErrorUser();
                 return "";
             }
         }
