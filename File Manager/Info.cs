@@ -14,6 +14,7 @@ namespace TechnicalTask
                 Console.WriteLine($"name: {infoDir.Name}");
                 Console.WriteLine($"last access time: {infoDir.LastAccessTime}");
                 Console.WriteLine($"creation time: {infoDir.CreationTime}");
+                Console.WriteLine($"last write time: {infoDir.LastWriteTime}");
                 Console.WriteLine($"root: {infoDir.Root}");
                 Console.WriteLine($"attributes: {infoDir.Attributes}");
                 Console.WriteLine($"parent: {infoDir.Parent}");
@@ -32,6 +33,7 @@ namespace TechnicalTask
                 Console.WriteLine($"creation time: {file.CreationTime}");
                 Console.WriteLine($"last edit: {file.LastWriteTime}");
                 Console.WriteLine($"size in bytes: {file.Length}");
+                Console.WriteLine($"attributes: {file.Attributes}");
                 Console.WriteLine($"file exists: {file.Exists}");
                 Console.WriteLine($"file format: {file.Extension}");
                 Console.WriteLine($"last enter: {file.LastAccessTime}");

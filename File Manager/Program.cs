@@ -10,7 +10,7 @@ create _create = new();
 string userenter;
 
 //3...2....1... старт!
-UI.WelcomeDrink();
+//UI.WelcomeDrink();
 
 while (true)
 {
@@ -44,8 +44,6 @@ while (true)
             case 'e':
                 UI.Examples();
                 break;
-
-            //future updates
             case 'r':
                 //rename
                 break;
