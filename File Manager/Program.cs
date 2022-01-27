@@ -6,11 +6,12 @@ getinfo _info = new();
 copy _copy = new();
 open _filOp = new();
 create _create = new();
+ChangeName _rename = new();
 
 string userenter;
 
 //3...2....1... старт!
-//UI.WelcomeDrink();
+UI.WelcomeDrink();
 
 while (true)
 {
@@ -45,7 +46,7 @@ while (true)
                 UI.Examples();
                 break;
             case 'r':
-                //rename
+                _rename.Rename(userenter);
                 break;
             case 'm':
                 //hacker mode

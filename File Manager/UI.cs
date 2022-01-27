@@ -72,7 +72,8 @@ namespace TechnicalTask
             Console.WriteLine("o f » use to open file");
             Console.WriteLine("n f » create file");
             Console.WriteLine("n dir » create directory");
-
+            Console.WriteLine("r f » rename file");
+            Console.WriteLine("r dir » rename directory");
         }
 
         public static void Examples()   //примерчики
@@ -87,6 +88,8 @@ namespace TechnicalTask
             Console.WriteLine("o f /Users/mac/onlytextfile.docx");
             Console.WriteLine("n f /Users/mac/test1 moonlightsonate.txt (first - path, second - name of new file)");
             Console.WriteLine("n dir /Users/mac test3 (first - path too, second - name too, but of new directory)");
+            Console.WriteLine("r f /Users/mac/project.docx microsoft.docx (first - path, second - new name of old file)");
+            Console.WriteLine("r dir /Users/mac/hentai homework (first - path too, second - new name of old directory)");
         }
 
         public static void WelcomeDrink()   //приветствие

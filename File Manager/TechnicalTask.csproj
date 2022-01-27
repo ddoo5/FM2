@@ -11,5 +11,6 @@
     <Compile Remove="error.cs" />
     <Compile Remove="Help.cs" />
     <Compile Remove="rename.cs" />
+    <Compile Remove="Rename.cs" />
   </ItemGroup>
 </Project>
